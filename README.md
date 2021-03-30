@@ -42,10 +42,10 @@ This is a simple Django app for web visualization which allows users to upload c
     - [Miniconda](https://docs.conda.io/en/latest/miniconda.html) ([Windows](https://docs.conda.io/en/latest/miniconda.html#windows-installers)/[Linux](https://docs.conda.io/en/latest/miniconda.html#linux-installers)/[MacOS](https://docs.conda.io/en/latest/miniconda.html#macosx-installers))
 - Programming language: Python (version 3.7)
 - Using the terminal or an Anaconda Prompt, create a new environment – **$ conda create –n webviz python=3.7**
-- Activate new environment - **$ conda activate  webviz**
+- Activate new environment - **$ conda activate webviz**
 - Clone this repository from Github:
     – open terminal and select a project path - **$ cd PATH**
-    - To clone type - **$ git clone https://github.com/JagritiG/data-middleware.git**
+    - To clone type - **$ git clone https://github.com/JagritiG/django-webviz.git**
 - Install requirements.txt  using pip - **$ pip install –r requirements.txt**
 
         
