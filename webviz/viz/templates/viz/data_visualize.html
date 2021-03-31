@@ -4,7 +4,7 @@
 <div class="container">
     {% if plots %}
     <H3><b>Visualize {{ plots }}</b></H3>
-    <form action="/chart/" method="post">
+    <form action="/chart/" method="post" id="chart-form">
         {% csrf_token %}
         <label for="chart-select">Select Plot:</label>
         <select name="chart-type" class="form-control" id="chart-select">
@@ -29,7 +29,7 @@
             {% endfor %}
         </select>
         <br>
-        <button class="btn btn-primary btn-sm" type="submit" style="border: none; background-color: green; color: white;">Plot</button>
+        <button class="btn btn-primary btn-sm" name="Chart" value="Chart" form="chart-form" type="submit" style="border: none; background-color: green; color: white;">Plot</button>
     </form>
         <br>
         <a href="{% url 'upload' %}">Back</a>

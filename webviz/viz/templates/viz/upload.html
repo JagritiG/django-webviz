@@ -8,6 +8,7 @@
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form|crispy }}
+        <!--<input type="file" name="myFile">-->
         <br>
         <button class="btn btn-primary btn-sm" type="submit" style="border: none; background-color: green; color: white;">Upload file</button>
     </form>
@@ -55,17 +56,23 @@
         {% csrf_token %}
         <a class="btn btn-primary btn-sm" href="{% url 'upload' %}" style="border: none; background-color: green;">Reset</a>
         </form>
-        <form action="/process/" method="post" id="process-form" style="display:inline;">
-        {% csrf_token %}
-        <button type="submit" name="Process" value="Process" form="process-form" class="btn btn-primary btn-sm"
-                style="border: none; background-color: green;">Process</button>
-        </form>
+        <!--<form action="/process/" method="post" id="process-form" style="display:inline;">-->
+        <!--{% csrf_token %}-->
+        <!--<button type="submit" name="Process" value="Process" form="process-form" class="btn btn-primary btn-sm"-->
+                <!--style="border: none; background-color: green;">Process</button>-->
+        <!--</form>-->
         <form action="/visualization/" method="post" id="plot-form" style="display:inline;">
         {% csrf_token %}
         <button type="submit" name="Plot" value="Plot" form="plot-form" class="btn btn-primary btn-sm"
                 style="border: none; background-color: green;">Plot</button>
         </form>
     </div>
+    <!--<br><br>-->
+    <!--<div>-->
+    <!--{% autoescape off %}-->
+      <!--{{ plot_div }}-->
+      <!--{% endautoescape %}-->
+    <!--</div>-->
 
     </div>
 
