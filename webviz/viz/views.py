@@ -61,16 +61,17 @@ def data_process(request):
 
 def data_visualize(request):
     context = {}
-    plots = request.POST.get('Plot', None)
-    context['plots'] = plots
+    if request.POST.get('Plot'):
+        plots = request.POST.get('Plot', None)
+        context['plots'] = plots
 
-    get_objects = Csv.objects.latest('title')
-    uploaded_file = get_objects.csv
-    context['get_objects'] = get_objects
+        get_objects = Csv.objects.latest('title')
+        uploaded_file = get_objects.csv
+        context['get_objects'] = get_objects
 
-    df = pd.read_csv(uploaded_file, encoding='utf-8')
-    col_list = df.columns.to_list()
-    context['columns'] = col_list
+        df = pd.read_csv(uploaded_file, encoding='utf-8')
+        col_list = df.columns.to_list()
+        context['columns'] = col_list
 
     return render(request, 'viz/data_visualize.html', context)
 

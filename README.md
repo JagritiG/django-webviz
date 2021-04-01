@@ -46,15 +46,27 @@ This is a simple Django app for web visualization which allows users to upload c
 - Clone this repository from Github:
     – open terminal and select a project path - **$ cd PATH**
     - To clone type - **$ git clone https://github.com/JagritiG/django-webviz.git**
-- Install requirements.txt  using pip - **$ pip install –r requirements.txt**
 
         
 ### Deployment on Localhost:8000
-- Navigate to project webviz  (project name)
-- Run command ls to check the right path: 
+- Create an virtual environment and activate env
+- Navigate to project **django-webviz** folder
+- Install requirements.txt  using pip - **$ pip install –r requirements.txt**
+- Navigate to project **webviz**  (project name)
+- Run command `ls` to check the right path: 
 [__init__.py  db.sqlite3  manage.py  media  static  viz  webviz]
+- Create Database & connect it within the **settings.py** (e.g. MySQL, Postgres)
+- Run following commands for database migrations:
+     
+     ``python3 manage.py makemigrations``
+     
+     ``python3 manage.py migrate``
+- Run following command to collect all static files:
+    
+    ``python3 manage.py collectstatic``
 - Run following command to run the server:
-    **$ python3 manage.py runserver** 
+    
+    ``python3 manage.py runserver``
     
 - Open localhost **localhost:8000** to see the pages
 - Go to **Upload File**, **localhost:8000/upload/** and upload a csv file and plot the figure
