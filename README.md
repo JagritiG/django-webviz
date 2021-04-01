@@ -41,17 +41,21 @@ This is a simple Django app for web visualization which allows users to upload c
     - [Anaconda](https://docs.anaconda.com/anaconda/navigator/install/) ([Windows](https://docs.anaconda.com/anaconda/install/windows/)/[Linux](https://docs.anaconda.com/anaconda/install/linux/)/[MacOS](https://docs.anaconda.com/anaconda/install/mac-os/))
     - [Miniconda](https://docs.conda.io/en/latest/miniconda.html) ([Windows](https://docs.conda.io/en/latest/miniconda.html#windows-installers)/[Linux](https://docs.conda.io/en/latest/miniconda.html#linux-installers)/[MacOS](https://docs.conda.io/en/latest/miniconda.html#macosx-installers))
 - Programming language: Python (version 3.7)
-- Using the terminal or an Anaconda Prompt, create a new environment – **$ conda create –n webviz python=3.7**
+- Using the terminal or an Anaconda Prompt, create a new environment – 
+
+    ``conda create –n webviz python=3.7``
 - Activate new environment - **$ conda activate webviz**
 - Clone this repository from Github:
-    – open terminal and select a project path - **$ cd PATH**
-    - To clone type - **$ git clone https://github.com/JagritiG/django-webviz.git**
+    – open terminal and select a project path - ``cd PATH``
+    - To clone type - 
+    
+    ``git clone https://github.com/JagritiG/django-webviz.git``
 
         
 ### Deployment on Localhost:8000
 - Create an virtual environment and activate env
 - Navigate to project **django-webviz** folder
-- Install requirements.txt  using pip - **$ pip install –r requirements.txt**
+- Install requirements.txt  using pip - ``pip install –r requirements.txt``
 - Navigate to project **webviz**  (project name)
 - Run command `ls` to check the right path: 
 [__init__.py  db.sqlite3  manage.py  media  static  viz  webviz]
