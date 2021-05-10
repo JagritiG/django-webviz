@@ -1,38 +1,12 @@
 # WebViz: Web Visualization using Django and Plotly
 This is a simple Django app for web visualization which allows users to upload csv file and visualize the data. 
 
-### Package Structure Overview:
-    django-webviz
-        data
-        docs
-        webviz/  (project name)
-            __init__.py
-            webviz/
-                __init__.py
-                asgi.py
-                settings.py
-                urls.py
-                wsgi.py
-            viz/     (app name)
-                migrations
-                static/
-                    app.css  (css styling files)
-                templates/
-                    (all html templates)
-                __init__.py
-                admin.py
-                apps.py
-                forms.py
-                models.py
-                tests.py
-                views.py               
-            static
-            media
-            db.sqlite3
-            manage.py
-        LICENSE.txt
-        README.md
-        requirements.txt    
+## Example:
+![Alt Text](/docs/webviz_fig/webviz_fig1.png)
+![Alt Text](/docs/webviz_fig/webviz_fig2.png)
+![Alt Text](/docs/webviz_fig/webviz_fig3.png)
+![Alt Text](/docs/webviz_fig/webviz_fig4.png)
+
 
 ## Installation and Deployment
 
