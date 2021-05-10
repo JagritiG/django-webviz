@@ -2,10 +2,10 @@
 This is a simple Django app for web visualization which allows users to upload csv file and visualize the data. 
 
 ## Example:
-![Alt Text](/docs/webviz_fig/webviz_fig1.png)
-![Alt Text](/docs/webviz_fig/webviz_fig2.png)
-![Alt Text](/docs/webviz_fig/webviz_fig3.png)
-![Alt Text](/docs/webviz_fig/webviz_fig4.png)
+![Alt Text](docs/webviz_fig/webviz_fig1.png)
+![Alt Text](docs/webviz_fig/webviz_fig2.png)
+![Alt Text](docs/webviz_fig/webviz_fig3.png)
+![Alt Text](docs/webviz_fig/webviz_fig4.png)
 
 
 ## Installation and Deployment
