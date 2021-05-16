@@ -1,5 +1,6 @@
-# WebViz: Web Visualization using Django and Plotly
-This is a simple Django app for web visualization which allows users to upload csv file and visualize the data. 
+# WebViz: Web Based Data Processing and Visualization using Plotly and Django
+This is a simple Django app for data analyzing and plotting which allows users to upload CSV file and visualize the data. The objective is processing, analyzing, and plotting based on uploaded data. The user has full control over the visibility of the raw data, basic information such as number of rows, columns, null values, datatypes, etc., descriptive statistics such as count, mean, std, max, min, etc. The user can perform basic data cleaning such as handling missing values. Several different options for plotting are available; barplot, scatterplot, histograms. The plot can be saved as a PNG file. Other data processing features and plots will be added in the next version. 
+
 
 ## Example:
 ##### 1. Upload File 
